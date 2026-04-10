@@ -1,0 +1,182 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+\setstretch{1.2}
+
+\title{\textbf{System 1 – System 2 Brain Model Neural Network: \\ A Computational Framework for Dual-Process Cognition}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Human cognition is often described as a dual-process system consisting of fast, intuitive thinking and slow, analytical reasoning. While this framework has been extensively studied in psychology and behavioral economics, it has not been fully explored as a computational neural architecture.
+
+This work introduces the System 1 – System 2 Brain Model Neural Network (S1S2NN), a computational framework that models dual-process cognition as an interacting neural system. By representing intuitive and analytical processes as distinct but interconnected components, the model enables simulation of decision-making, cognitive bias, and adaptive reasoning.
+\end{abstract}
+
+\section{Introduction}
+
+Human decision-making is influenced by two distinct modes of thinking. The first is fast, automatic, and intuitive, while the second is slow, deliberate, and analytical. These two modes interact continuously, shaping perception, judgment, and behavior.
+
+Traditional models treat these processes conceptually, but lack computational representation. The S1S2NN aims to bridge this gap by modeling dual-process cognition as a neural system capable of simulation and analysis.
+
+\section{Conceptual Framework}
+
+The central hypothesis of the S1S2NN is:
+
+\begin{quote}
+Cognition emerges from the interaction between a fast, heuristic-driven system and a slow, analytical system operating within a unified neural architecture.
+\end{quote}
+
+The system is represented as a neural graph:
+
+\begin{itemize}
+\item Nodes represent cognitive states, perceptions, and decisions
+\item Edges represent influence, inference, and feedback
+\item Two subsystems (System 1 and System 2) operate within the same network
+\end{itemize}
+
+\section{Dual-System Representation}
+
+\subsection{System 1 (Fast Thinking)}
+
+\begin{itemize}
+\item Automatic and unconscious processing
+\item Fast and efficient
+\item Based on heuristics and pattern recognition
+\item Emotionally driven and associative
+\end{itemize}
+
+\subsection{System 2 (Slow Thinking)}
+
+\begin{itemize}
+\item Controlled and conscious processing
+\item Slow and effortful
+\item Logical and analytical reasoning
+\item Capable of overriding System 1 outputs
+\end{itemize}
+
+These systems are not physically separate but functionally distinct processes within the same cognitive architecture.
+
+\section{Neural Network Architecture}
+
+The S1S2NN consists of the following layers:
+
+\begin{itemize}
+\item \textbf{Input Layer}: Sensory and contextual information
+\item \textbf{System 1 Layer}: Fast heuristic processing
+\item \textbf{System 2 Layer}: Analytical reasoning and evaluation
+\item \textbf{Integration Layer}: Combines outputs of both systems
+\item \textbf{Decision Layer}: Final action or judgment
+\end{itemize}
+
+The system evolves as:
+
+\[
+X_{t+1} = f(WX_t + S_1(X_t) + S_2(X_t) + B)
+\]
+
+where:
+\begin{itemize}
+\item $S_1(X_t)$ represents System 1 processing
+\item $S_2(X_t)$ represents System 2 processing
+\item $W$ represents interactions between layers
+\item $B$ represents external inputs
+\item $f$ is a nonlinear activation function
+\end{itemize}
+
+\section{Model Construction and Implementation}
+
+The S1S2NN is implemented as a computational model:
+
+\begin{itemize}
+\item System 1 uses heuristic mappings and pattern recognition
+\item System 2 uses rule-based and analytical computations
+\item Integration layer resolves conflicts between the two systems
+\end{itemize}
+
+The model supports:
+
+\begin{itemize}
+\item Decision-making simulations
+\item Cognitive bias analysis
+\item Behavioral prediction
+\item Adaptive reasoning systems
+\end{itemize}
+
+\section{Results}
+
+Simulation of the S1S2NN reveals:
+
+\begin{itemize}
+\item \textbf{Fast Decision Making}: System 1 dominates under time constraints
+\item \textbf{Bias Emergence}: Heuristic shortcuts lead to predictable biases
+\item \textbf{Analytical Correction}: System 2 corrects errors when activated
+\item \textbf{Dynamic Switching}: System usage depends on context and complexity
+\end{itemize}
+
+Outputs include:
+
+\begin{itemize}
+\item Decision accuracy metrics
+\item Cognitive bias indicators
+\item Processing time distributions
+\item System dominance patterns
+\end{itemize}
+
+\section{Inference}
+
+From the results, we infer:
+
+\begin{itemize}
+\item Human cognition is fundamentally hybrid and interactive
+\item Efficiency and accuracy trade-offs are inherent in dual systems
+\item Bias is a natural consequence of heuristic processing
+\item Optimal decision-making requires balanced system interaction
+\end{itemize}
+
+\section{Extensions}
+
+Future directions include:
+
+\begin{itemize}
+\item Integration with reinforcement learning systems
+\item Neuro-symbolic reasoning architectures
+\item Cognitive load modeling
+\item Multi-agent decision-making systems
+\end{itemize}
+
+\section{Relation to Cognitive Models}
+
+The S1S2NN connects to:
+
+\begin{itemize}
+\item Dual-process theory of cognition
+\item Behavioral economics models
+\item Cognitive psychology frameworks
+\item Artificial intelligence reasoning systems
+\end{itemize}
+
+\section{References}
+
+\begin{itemize}
+\item Kahneman, D. (2011). Thinking, Fast and Slow.
+\item Tversky, A., Kahneman, D. (1974). Judgment Under Uncertainty.
+\item Evans, J. (2008). Dual-Processing Accounts of Reasoning.
+\item Stanovich, K., West, R. (2000). Individual Differences in Reasoning.
+\item Sun, R. (2002). Duality of the Mind.
+\end{itemize}
+
+\section{Repository for Experimentation}
+
+\noindent
+\url{https://github.com/spacetracker-collab/System1System2BrainModel}
+
+\end{document}
