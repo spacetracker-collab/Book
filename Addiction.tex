@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+\setstretch{1.2}
+
+\title{\textbf{AddictedBrain: \\ A Neural Architecture Modeling Recursive Reward Trapping and Biological Degradation}}
+\author{Iyer Ramkumar Ramasubramanian \\ \textit{Independent Researcher}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Addiction is fundamentally a disorder of the decision-making apparatus, where the biological cost-to-reward ratio becomes skewed. This paper introduces the \textbf{AddictedBrain} model, a closed-loop neural system that simulates the transition from healthy equilibrium to a state of recursive reward seeking. By integrating biological state modeling—specifically energy, stress, and health—with a high-frequency reward loop, we demonstrate how neural weights become "trapped" in sub-optimal states of passive equilibrium and biological decay.
+\end{abstract}
+
+\section{Introduction}
+As discussed in the \textit{Homo Deus Brain Model}, intelligence emerges from a closed-loop interaction between sensing and biological constraints. The \textbf{AddictedBrain} extends this by modeling the "Addiction Loop": a state where the neural objective function ($L$) prioritizes a specific high-intensity reward signal over long-term system stability. This architecture serves as a physical apparatus to study the neurobiology of dopamine-mimetic weight updates in artificial systems.
+
+\section{The Addiction Framework}
+
+The model identifies three critical phases of the addicted neural state:
+
+\begin{itemize}
+\item \textbf{Reward Saturation}: The cognitive layer receives high-magnitude signals that override the "minimal action" optimization found in stable systems.
+\item \textbf{Recursive Trapping}: The weight update mechanism ($W$) becomes localized, preventing the system from exploring diverse state spaces—a phenomenon known as "narrow-focus personalization".
+\item \textbf{Biological Degradation}: The system continues to seek reward even as internal state variables ($B$) show catastrophic declines in energy and health.
+\end{itemize}
+
+\section{System Architecture}
+
+The AddictedBrain utilizes the established HDBM layers with a modified optimization path:
+
+\subsection{Dopaminergic Sensor Layer}
+Captures specific "high-reward" environmental signals that take priority over standard IoT sensor inputs.
+
+\subsection{The Feedback Loop}
+While the standard model seeks a low-action state to preserve energy, the AddictedBrain incorporates a "Craving Variable" ($C$) that acts as a negative bias against the loss function $L = ||A_t||^2$.
+
+\section{Mathematical Formulation}
+
+The system state $X$ evolves with an added "Addiction Bias" $A$:
+
+\[
+X_{t+1} = f(WX_t + B(X_t) + A(X_t))
+\]
+
+Where $A(X_t)$ represents the amplified reward signal. The biological update reflects the cost of this cycle:
+
+\[
+B_{t+1} = B_t - \gamma(A_t)
+\]
+
+In this case, $\gamma$ (the degradation rate) is accelerated due to the high-frequency action execution required to maintain the reward state.
+
+\section{Experimental Observations}
+
+Simulated runs of the AddictedBrain exhibit the following behaviors:
+
+\begin{itemize}
+\item \textbf{Loss Divergence}: Unlike the stable Homo Deus model, the loss function may fluctuate or spike as the system struggles to balance biological survival with reward seeking.
+\item \textbf{Passive Equilibrium Failure}: The system fails to reach a "low-energy" stability, eventually leading to a complete depletion of the energy variable.
+\item \textbf{Weight Rigidity}: The network weights ($W$) lose plasticity, becoming locked into the pathways that produce the reward signal.
+\end{itemize}
+
+\section{Conclusion}
+The AddictedBrain model demonstrates that addiction is a mathematical consequence of reward-heavy objective functions within a resource-constrained biological environment. Future research will explore "rehabilitation algorithms" designed to restore plasticity to locked neural weights.
+
+\section{Repository for Experimentation}
+\noindent
+\url{https://github.com/spacetracker-collab/AddictedBrain}
+
+\end{document}
