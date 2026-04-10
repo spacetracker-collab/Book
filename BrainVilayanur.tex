@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+\setstretch{1.2}
+
+\title{\textbf{Ramachandran Brain GNN: \\ Modeling Cortical Remapping, Mirror Neurons, and Phantom Limb Resolution}}
+\author{Iyer Ramkumar Ramasubramanian \\ \textit{Independent Researcher}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The plasticity of the adult human brain is most visible in cases of somatosensory reorganization following limb loss. This paper introduces the \textbf{Ramachandran Brain GNN}, a computational model based on the theories of Vilayanur Ramachandran. By utilizing a graph-based topology of cortical regions, we simulate the dynamics of phantom limb signals, mirror neuron engagement, and the topological remapping between the face and hand regions. Our results demonstrate how mirror therapy can be modeled as a corrective feedback loop that resolves prediction errors in body identity.
+\end{abstract}
+
+\section{Introduction}
+As an independent researcher investigating the convergence of neurobiology and artificial intelligence, I propose that neural networks can serve as effective models for clinical phenomena like phantom limb syndrome. The \textbf{Ramachandran Brain GNN} extends the HDBM framework by incorporating specific cortical topologies and mirror-system dynamics.
+
+\section{Cortical Topology and Brain Regions}
+
+The model defines a graph $G = (V, E)$ where nodes represent specific functional regions and edges represent cortical adjacency:
+
+\begin{itemize}
+\item \textbf{Somatosensory Nodes}: Left Hand (0), Right Hand (1), Face (2), and Arm (3).
+\item \textbf{Integrative Nodes}: Visual Cortex (4) and Motor Cortex (5).
+\item \textbf{Adjacency}: Edges reflect the biological proximity of these regions, such as the face-hand boundary.
+\end{itemize}
+
+\section{Simulated Dynamics}
+
+The system identifies four distinct phases of body identity reconstruction:
+
+\subsection{Phantom Limb Signal (Phase 1)}
+The initial state is characterized by a sharp error signal in the somatosensory map, representing the brain's expectation of input from a missing limb.
+
+\subsection{Mirror System Engagement (Phase 2)}
+Simulated mirror therapy provides visual feedback (Visual Cortex $\rightarrow$ Motor Cortex), creating a "simulated embodiment" that counters the error signal.
+
+\subsection{Plastic Rewiring (Phase 3)}
+The system undergoes cortical remapping, specifically modeled as the "invasion" of the hand region by signals from the adjacent face region.
+
+\section{Mathematical Formulation}
+
+Remapping is modeled as an update to the weight matrix $W$ based on signal mismatch and temporal dynamics:
+
+\[
+\Delta W_{i,j} = \eta \cdot (\text{Signal}_i \cdot \text{Signal}_j) - \gamma(E_{error})
+\]
+
+Where $E_{error}$ represents the prediction error between the internal body map and environmental feedback. The system eventually reaches an \textbf{oscillatory equilibrium}, representing stable prediction-correction loops.
+
+\section{Results and Inference}
+
+The simulation results provide computational evidence for Ramachandran's theories:
+\begin{itemize}
+\item \textbf{Error Resolution}: Mirror neuron activation successfully reduces the initial phantom limb spike.
+\item \textbf{Topological Remapping}: The graph weights reflect the shifting boundaries between the face and hand regions over time.
+\item \textbf{Embodiment Dynamics}: The model acts as a "computational model of body identity," showing how the brain reconstructs its physical map based on multi-sensory feedback.
+\end{itemize}
+
+\section{Conclusion}
+The Ramachandran Brain GNN provides a path for moving beyond generic AI into specialized computational neuroscience. By modeling specific clinical dynamics, we can better understand the plasticity and robustness of the human brain.
+
+\section{Repository for Experimentation}
+\noindent
+\url{https://github.com/spacetracker-collab/BrainModelVilayanurRamachandran}
+
+\end{document}
