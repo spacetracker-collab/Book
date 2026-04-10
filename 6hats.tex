@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+\setstretch{1.2}
+
+\title{\textbf{DeBonoNet: \\ A Multi-Agent Graph Neural Network for Distributed Cognitive Reasoning}}
+\author{Iyer Ramkumar Ramasubramanian \\ \textit{Independent Researcher}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Traditional neural architectures often rely on a single objective function, potentially leading to narrow-focus optimization. This paper introduces \textbf{DeBonoNet}, a multi-agent cognitive network that implements Edward de Bono's Six Thinking Hats within a Graph Neural Network (GNN) framework. By allowing agents to exchange information and update internal beliefs based on neighboring perspectives, we demonstrate the emergence of distributed cognition, characterized by a "negotiated" consensus across diverse analytical dimensions.
+\end{abstract}
+
+\section{Introduction}
+As an independent researcher exploring the intersection of neurobiology and artificial intelligence, I propose that higher-order reasoning requires a multi-perspective substrate. DeBonoNet extends the "Homo Deus" framework from a single-loop system to a distributed cognitive field where intelligence is no longer just computing—it is the negotiation of internal viewpoints.
+
+\section{Architectural Features}
+
+DeBonoNet is designed as a clean, multi-agent GNN system with the following features:
+
+\begin{itemize}
+\item \textbf{Six Hats Processing}: Each agent processes input data through the lens of specific cognitive roles (e.g., Green Hat for creativity, Black Hat for critique).
+\item \textbf{Graph Information Exchange}: Agents utilize a GNN layer to exchange representations with neighbors, updating their internal "mind state" based on the collective field.
+\item \textbf{Consensus-Adjusted Output}: The final system state reflects a balance between shared beliefs and individual agent perspectives.
+\end{itemize}
+
+\section{System Architecture}
+
+The model follows a tiered processing pipeline:
+
+\subsection{Individual Cognitive Layer}
+Agents independently produce a 16-dimensional internal representation using the Six Hats logic.
+
+\subsection{GNN Communication Layer}
+Agents exchange information via a distributed cognitive field, adjusting their activations to align with or critique their peers.
+
+\subsection{Emergent State Layer}
+Produces a final tensor (e.g., 4 agents $\times$ 16 dimensions), where each value represents a resolved cognitive signal.
+
+\section{Mathematical Formulation}
+
+The cognitive state of an agent $i$ is updated through its neighbors $\mathcal{N}(i)$:
+
+\[
+h_i^{(t+1)} = \sigma \left( \sum_{j \in \mathcal{N}(i) \cup \{i\}} \alpha_{ij} W h_j^{(t)} \right)
+\]
+
+The system can be quantitatively measured using a \textbf{Collective Intelligence Score} based on state variance:
+
+\[
+\text{Alignment} = \frac{1}{\text{Var}(\text{states})}
+\]
+
+Where low variance indicates consensus and high variance suggests a healthy diversity of perspective or "Black Hat" conflict.
+
+\section{Results and Interpretation}
+
+Experimental observations of DeBonoNet outputs reveal:
+\begin{itemize}
+\item \textbf{Numerical Evidence of Emergence}: Agents converge toward shared beliefs (e.g., consistent positive signals in shared dimensions) while retaining individual "skepticism".
+\item \textbf{Cognitive Mapping}: Positive clusters indicate alignment (Yellow Hat), while negative clusters represent internal critique and risk assessment (Black Hat).
+\item \textbf{Distributed Cognition}: The system behaves as a proto-"digital organization," acting more like a brain or a department than a simple linear network.
+\end{itemize}
+
+\section{Conclusion}
+DeBonoNet demonstrates that multi-agent GNNs can successfully simulate the complex negotiation required for real-world cognitive AI. This distributed approach provides a scalable framework for more resilient and transparent decision-making systems.
+
+\section{Repository for Experimentation}
+\noindent
+\url{https://github.com/spacetracker-collab/BrainDebonoSixThinking}
+
+\end{document}
